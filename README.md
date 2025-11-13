@@ -1,5 +1,22 @@
 # Description
-A lightweight dark/light mode switcher with a customizable Blocksy-compatible dark palette floating toggle button.
+A lightweight dark/light mode switcher with a customizable Blocksy-compatible dark palette floating toggle button.  
+This plugin does **not** require any premium theme or paid add-on.
+
+# Features
+* WordPress color picker settings page
+* Customizable dark palette:
+  * `--theme-palette-color-1`
+  * `--theme-palette-color-2`
+  * `--theme-palette-color-3`
+  * `--theme-palette-color-4`
+  * `--theme-palette-color-5`
+  * `--theme-palette-color-6`
+  * `--theme-palette-color-7`
+  * `--theme-palette-color-8`
+* Only affects dark mode (light mode uses your theme’s defaults)
+* Remembers user choice with localStorage
+* Works with any theme (optimized for Blocksy)
+* No dependencies, no bloat, no paid upgrades
 
 # Installation
 Install the plugin via the Wordpress menu Plugins -> Add Plugin.
