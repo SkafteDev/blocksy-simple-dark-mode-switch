@@ -1,0 +1,93 @@
+/* --- Floating toggle button --- */
+#stms-toggle.stms-toggle {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 9999;
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    background: rgba(248, 250, 252, 0.95);
+    color: #020617;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+#stms-toggle.stms-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+}
+
+#stms-toggle.stms-toggle:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button appearance in dark mode */
+html.stms-dark-mode #stms-toggle.stms-toggle {
+    background: rgba(15, 23, 42, 0.96);
+    color: #e5e7eb;
+}
+
+/* --- Your color hooks --- */
+/*
+   The plugin only toggles:
+
+     - html[data-stms-theme="light"] / [data-stms-theme="dark"]
+     - html.stms-dark-mode
+
+   You decide what changes visually.
+*/
+
+/* Example: simple site-wide background & text color swap
+   (You can move this into Customizer > Additional CSS if you prefer) */
+
+/*
+:root {
+    --stms-bg-light: #ffffff;
+    --stms-text-light: #020617;
+    --stms-bg-dark:  #020617;
+    --stms-text-dark: #e5e7eb;
+}
+
+body {
+    background-color: var(--stms-bg-light);
+    color: var(--stms-text-light);
+}
+
+html[data-stms-theme="dark"] body {
+    background-color: var(--stms-bg-dark);
+    color: var(--stms-text-dark);
+}
+*/
+
+/* Example: overriding Blocksy palette variables in dark mode
+   (Blocksy exposes palette CSS vars like --theme-palette-color-1, etc.) */
+
+/* Adjust Blocksy palette when dark mode is active */
+html[data-stms-theme="dark"] {
+    --theme-palette-color-1: #7456f1;
+    --theme-palette-color-2: #5e3fde;
+    --theme-palette-color-3: #7f8c9a;
+    --theme-palette-color-4: #ffffff;
+	  --theme-palette-color-5: #1e2933;
+	  --theme-palette-color-6: #0f141a;
+	  --theme-palette-color-7: #141b22;
+	  --theme-palette-color-8: #1b242c;
+}
