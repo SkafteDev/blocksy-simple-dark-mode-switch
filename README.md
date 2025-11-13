@@ -1,3 +1,9 @@
+# Description
+A lightweight dark/light mode switcher with a customizable Blocksy-compatible dark palette floating toggle button.
+
+# Installation
+Install the plugin via the Wordpress menu Plugins -> Add Plugin.
+
 # Changing colors
 Use the menu: Settings -> Theme Mode Switcher and set each individual color to your liking.
 
